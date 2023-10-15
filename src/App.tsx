@@ -46,10 +46,7 @@ function App() {
             return (
               <div className='pic' onClick={() => handleClick(index)} key={it.url}>
                 {
-                  it.url.endsWith('jpg') ? <img src={it.url} alt="" /> :
-                    <video autoPlay={true}>
-                      <source src={it.url} />
-                    </video>
+                  isVideo(it.url) ? <video src={it.url} /> : <img src={it.url} alt="" />
                 }
               </div>
             )

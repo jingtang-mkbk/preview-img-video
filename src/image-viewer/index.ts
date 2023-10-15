@@ -14,6 +14,8 @@ export type {
 } from './image-viewer'
 export type { ImageViewerShowHandler } from './methods'
 
+export { isVideo } from './utils'
+
 const Multi = attachPropertiesToComponent(MultiImageViewer, {
   show: showMultiImageViewer,
 })
